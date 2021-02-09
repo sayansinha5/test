@@ -18,11 +18,22 @@
 			<div class="col-md-6">
 				<div class="card">
 					<div class="card-body">
-						<h3>Testing Pages</h3>
-						<p>Thanks for visiting.</p>
+						<h3>Welcome to my GitHub Test Page</h3>
+						<p>Thank You for visiting.</p>
 						
 						<form method="POST" action="https://localhost/ghtest/form_submit.php?key=3truszdeeac3yrhdmcp764sferytgbvzo248mbn">
-							<input type="text" name="name" />
+							<div class="form-group">
+								<label for="name">Name</label>
+								<div class="form-control" name="name" id="name" />
+							</div>
+							<div class="form-group">
+								<label for="email">Email</label>
+								<div class="form-control" name="email" id="email" />
+							</div>
+							<div class="form-group">
+								<label for="name">Message</label>
+								<div class="form-control" name="message" id="message" />
+							</div>
 							<button class="btn btn-primary btn-block" type="submit">Hello</button>
 						</form>
 					</div>
