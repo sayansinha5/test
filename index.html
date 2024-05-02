@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
 	<head>
-	
+
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 	<link href="css/style.css" rel="stylesheet">
@@ -20,8 +20,8 @@
 					<div class="card-body">
 						<h3>Welcome to my GitHub Test Page</h3>
 						<p>Thank You for visiting.</p>
-						
-						<form method="POST" action="http://localhost/test?key=847rhfhhc2398989423c">
+
+						<form method="POST" action="http://localhost/test/847rhfhhc2398989423c">
 							<div class="form-group">
 								<label for="name">Name</label>
 								<input class="form-control" name="name" id="name" placeholder="Name">
@@ -34,6 +34,7 @@
 								<label for="message">Message</label>
 								<textarea class="form-control" name="message" id="message" placeholder="Message..."></textarea>
 							</div>
+							<button class="btn btn-warning btn-block" click="setSampleData()">Set Sample Form</button>
 							<button class="btn btn-primary btn-block" type="submit" name="submit_form">Send</button>
 						</form>
 					</div>
@@ -41,8 +42,16 @@
 			</div>
 			<div class="col-md-3"></div>
 		</div>
-	</div>	
+	</div>
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>
+
+<script>
+  function setSampleData() {
+    document.getElementById('name').value = 'Test Full Name form HG Pages';
+    document.getElementById('email').value = 'hello.world@testghpages.com';
+    document.getElementById('message').value = 'This is a sample data too set for GH Pages';
+  }
+</script>
